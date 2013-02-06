@@ -5,6 +5,7 @@
 function ajaxd(url){
    var o = null;
    $.ajax(url).done(function(data) { var o = data; });
+   return o;
 }
 //This function sends an ajax request to url provided, It will not do anything else with the data but send the request
 //as it's named ajaxn for nothing to return.
